@@ -1,0 +1,14 @@
+services:
+  frontend:
+    build: ./App/Streamlit
+    ports:
+      - 8501:8501
+    depends_on:
+      - backend
+
+  
+  backend:
+    build: ./App
+    ports:
+      - 8001:8001
+    

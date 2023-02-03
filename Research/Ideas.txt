@@ -1,0 +1,9 @@
+1. Inherit tf.keras.Model into Attention.
+Check the shape of trainable parameters before and after
+
+2. Check locf value after intersection of pre-trained and w2v models
+
+3.Try lowering the learning rate in second time of training
+
+4.Try freezing the image_feature model and save it for testing
+
