@@ -7,7 +7,7 @@ import streamlit as st
 import requests
 # import json
 
-# import App.config as config
+# import App.core as config
 
 # import sys
 # from streamlit.web import cli as stcli
@@ -25,8 +25,10 @@ if st.button("Caption"):
     # create dictionary of file
     file = {'file': image.getvalue()}
 
-    response = requests.post("http://backend:8001/caption", files = file)
+    response = requests.post("http://localhost:8001/caption", files = file)
     st.write(response.json())
+
+# replace localhost with backend for containerization
 
 
 ## For saving the uploaded file and then accessing it:

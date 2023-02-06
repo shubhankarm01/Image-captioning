@@ -1,4 +1,4 @@
-import App.config as config
+import App.core as config
 import numpy as np
 import json
 
