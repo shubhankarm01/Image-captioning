@@ -16,5 +16,5 @@ Attention mechanism based on the image-feature and word-vector of token from pre
 Custome training loops are then run with ADAM optimizer to decrease the learning losses.
 At last, the model weights are saved for testing and building the API.
 
-Fastapi is used to creating the backend API. Streamlit is used for creating simplistic frontend for the API. 
+Fastapi is used for creating the backend API. Streamlit is used for creating simplistic frontend UI for the API. 
 Both backend and frontend are containerized and linked together using Docker compose.
